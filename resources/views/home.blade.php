@@ -89,12 +89,12 @@
 
                 <!-- Plus de documents peuvent être ajoutés ici -->
             </div>
-
+{{--
             <div class="text-center mt-5">
                 <a href="#" class="btn btn-primary btn-lg">
                     <i class="fas fa-book me-2"></i> Voir tous les documents
                 </a>
-            </div>
+            </div> --}}
         </div>
     </section>
 
