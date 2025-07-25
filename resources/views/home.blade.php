@@ -55,7 +55,7 @@
             <form action="{{ route('byname') }}">
                 @csrf
                 <div class="section-header text-center mb-5">
-                    <h2 class="fw-bold">Documents récents</h2>
+                    <h2 class="fw-bold">COPINA</h2>
                     <p class="text-muted">Parcourez nos derniers documents ajoutés</p>
                 </div>
                 <div class="input-group mb-3">
@@ -72,7 +72,7 @@
                         <div class="card document-card">
                             <div class="position-relative">
                                 {{-- <img src="https://source.unsplash.com/random/600x400/?study" class="card-img-top" alt="Document"> --}}
-                                <span class="badge bg-{{ $fichier->categorie->badge  }}  category-badge">{{ $fichier->categorie->nom  }}</span>
+                                <span class="badge bg-{{ $fichier->categorie->badge  }}  category-badge">{{ $fichier->categorie->sigle  }}</span>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">{{ $fichier->nom }}</h5>

@@ -10,6 +10,7 @@ class Categorie extends Model
     use HasFactory;
       protected $fillable = [
         'nom',
-        'badge'
+        'badge',
+        'sigle'
     ];
 }

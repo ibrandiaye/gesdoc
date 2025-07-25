@@ -54,6 +54,7 @@
                         <tr>
                             <th>#</th>
                             <th>NOM </th>
+                            <th>Sigle </th>
                             <th>Badge</th>
                             <th>Actions</th>
                         </tr>
@@ -63,6 +64,7 @@
                         <tr>
                             <td>{{ $categorie->id }}</td>
                             <td>{{ $categorie->nom}}</td>
+                            <td>{{ $categorie->sigle}}</td>
                              <td>{{ $categorie->badge}}</td>
                             <td>
 

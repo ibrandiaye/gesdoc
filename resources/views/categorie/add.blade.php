@@ -54,6 +54,12 @@
                                             <input type="text" name="nom"  value="{{ old('nom') }}" class="form-control"required>
                                         </div>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Sigle </label>
+                                            <input type="text" name="sigle"  value="{{ old('sigle') }}" class="form-control"required>
+                                        </div>
+                                    </div>
                                       <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Badge</label>
