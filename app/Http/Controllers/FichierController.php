@@ -24,7 +24,8 @@ class FichierController extends Controller
     public function index()
     {
         $fichiers = $this->fichierRepository->getAll();
-        return view('fichier.index',compact('fichiers'));
+        $categories = $this->categorieRepository->getAll();
+        return view('fichier.index',compact('fichiers','categories'));
     }
 
     /**
@@ -130,13 +131,15 @@ class FichierController extends Controller
 
     public function getByName(Request $request)
     {
-        $fichiers = $this->fichierRepository->getByNom($request->nom);
-        return view('home',compact('fichiers'));
+        $fichiers = $this->fichierRepository->getBCategorie($request->nom);
+        $categories = $this->categorieRepository->getAll();
+        return view('home',compact('fichiers','categories'));
     }
 
     public function allFichier()
     {
         $fichiers = $this->fichierRepository->getAll();
-        return view('home',compact('fichiers'));
+        $categories = $this->categorieRepository->getAll();
+        return view('home',compact('fichiers','categories'));
     }
 }

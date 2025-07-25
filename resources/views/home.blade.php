@@ -59,8 +59,14 @@
                     <p class="text-muted">Parcourez nos derniers documents ajoutés</p>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg" name="nom" placeholder="Rechercher un document...">
-                    <button type="submit" class="btn btn-primary" type="button">
+                    <select class="form-control form-control-lg" name="nom" required>
+                        <option value="">Rechercher par groupes d’affinités ou thématiques ...</option>
+                        @foreach($categories as $key => $value)
+                            <option value="{{ $value->id }}">{{ $value->nom }} ({{ $value->sigle }})</option>
+                        @endforeach
+                    </select>
+{{--                     <input type="text" class="form-control form-control-lg" name="nom" placeholder="Rechercher un document...">
+ --}}                    <button type="submit" class="btn btn-primary" type="button">
                         <i class="fas fa-search"></i> Rechercher
                     </button>
                 </div>

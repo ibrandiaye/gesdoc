@@ -17,6 +17,12 @@ class FichierRepository extends RessourceRepository{
         ->where("nom","like","%".$nom."%")
         ->get();
     }
+    public function getBCategorie($nom)
+    {
+        return Fichier::with("categorie")
+        ->where("categorie_id",$nom)
+        ->get();
+    }
 
 
 }
